@@ -29,8 +29,8 @@ public class TestEqualsDouble {
     public  void before(){
         // value is just a place to store an incrementing integer
         AtomicInteger value = new AtomicInteger(1);
-        replace(method(Integer.class,"intValue"))
-                .with((proxy,method,args)-> value.getAndIncrement());
+//        replace(method(Integer.class,"intValue"))
+//                .with((proxy,method,args)-> value.getAndIncrement());
     }
 
     @Test

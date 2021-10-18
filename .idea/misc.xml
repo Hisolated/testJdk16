@@ -9,6 +9,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/testpom/pom.xml" />
+        <option value="$PROJECT_DIR$/testpom/office-plugin/pom.xml" />
       </list>
     </option>
   </component>

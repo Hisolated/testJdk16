@@ -12,13 +12,12 @@
 //
 package com.isolate.infrastructure.general.toolkit;
 
+import com.artofsolving.jodconverter.DocumentFamily;
+import com.isolate.domain.common.OfficeException;
 import com.sun.star.lang.XComponent;
 import com.sun.star.lang.XServiceInfo;
-import org.artofsolving.jodconverter.document.DocumentFamily;
-import org.artofsolving.jodconverter.office.OfficeException;
 
-import static org.artofsolving.jodconverter.office.OfficeUtils.*;
-import static org.artofsolving.jodconverter.office.OfficeUtils.cast;
+import static com.isolate.infrastructure.general.toolkit.OfficeUtils.cast;
 
 class OfficeDocumentUtils {
 

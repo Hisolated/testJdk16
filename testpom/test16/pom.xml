@@ -13,6 +13,13 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.isolate</groupId>
+            <artifactId>office-plugin</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -103,11 +110,6 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.isolate</groupId>
-            <artifactId>test16</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
@@ -294,6 +296,38 @@
             <version>4.2.1-1.5.2</version>
             <classifier>windows-x86_64</classifier>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.artofsolving/jodconverter -->
+        <dependency>
+            <groupId>com.artofsolving</groupId>
+            <artifactId>jodconverter</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openoffice</groupId>
+            <artifactId>juh</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openoffice</groupId>
+            <artifactId>ridl</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openoffice</groupId>
+            <artifactId>unoil</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.openoffice/jurt -->
+        <dependency>
+            <groupId>org.openoffice</groupId>
+            <artifactId>jurt</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+
     </dependencies>
 
 
