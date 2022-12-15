@@ -10,6 +10,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 import javax.print.attribute.IntegerSyntax;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.time.MonthDay;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -26,11 +27,16 @@ import static org.junit.runner.Request.method;
 public class TestEqualsDouble {
 
     @Before
-    public  void before(){
+    public  void before() throws NoSuchMethodException {
         // value is just a place to store an incrementing integer
         AtomicInteger value = new AtomicInteger(1);
-        replace(method(Integer.class,"intValue"))
-                .with((proxy,method,args)-> value.getAndIncrement());
+        Class<Integer> integerClass = Integer.class;
+
+        Method intValue = integerClass.getMethod("intValue");
+
+        intValue.invoke()
+//        replace(method(Integer.class,"intValue"))
+//                .with((proxy,method,args)-> value.getAndIncrement());
     }
 
     @Test
