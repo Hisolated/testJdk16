@@ -95,6 +95,7 @@ public class TestPOIWord {
                         System.err.println("第"+i+"行：");
                         //读取每一列数据
                         List<XWPFTableCell> cells = row.getTableCells();
+                        // 获取表格内容控件
                         List<CTSdtCell> tblSdtList = row.getCtRow().getSdtList();
 
                         if (tblSdtList != null && tblSdtList.size() > 0) {
