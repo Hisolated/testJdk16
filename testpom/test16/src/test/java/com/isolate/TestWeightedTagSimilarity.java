@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @description: some desc
+ * @description: 标签带权重相似度计算，加权余弦相似度算法
  * @author: isolate
  * @email: 15071340963@163.com
  * @date: 2023/3/6 16:27
